@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>my layout</title>
+<link rel="icon" type="image/x-icon" href="">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(172, 154, 94);
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 1300px; /* only for demonstration, should be removed */
+  background-color: rgb(172, 154, 94);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: rgb(190, 175, 126);
+  height: 1300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: rgb(218, 215, 215);
+  border: none;
+  color: rgb(148, 129, 89);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(11, 9, 26);
+  padding: 10px;
+  text-align: center;
+  color: white
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Profil Mahasiswa</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><button onclick="dokumen.location" class="button" target="_blank"><a href="index2.html">Home</a></button></li>
+      <li><button onclick="dokumen.location" class="button" target="_blank"><a href="Profile2.html">Profile</a></button></li> 
+      <li><button onclick="dokumen.location" class="button" target="_blank"><a href="layout2.html">Layout</a></button></li>
+    </ul>
+  </nav>
+  
+  <article>
+      <p><b><center>Mufidatul Izza</center></b></p>
+    <hr><section><center><img src="me2.jpg" alt=me.png usemap="#workmap" width="250" height="360"></img></center></section></hr>
+  </body>
+  <p1><center>
+  <style>
+  table, th, td {
+    border: 5px solid gray;
+  }
+  </style>
+  <hr>
+  <h1>BIODATA</h1>
+  <p1>Nama : Mufidatul Izza<br> Tempat, Tanggal Lahir : Pasuruan, 14 November 2002
+    <br> Agama : Islam<br> Alamat : Ds. Cendono, Dsn. Sumberyudo, Kec. Purwosari, Kab. Pasuruan</p1>  
+    <hr>
+  <h2>AKTIVITAS</h2>
+  <p2>Perkenalkan saya seorang Mahasiswa di Universitas Yudharta Pasuruan Prodi Teknik Informatika.<br> Alasan saya memilih Prodi Teknik Informatika adalah prospek kerja yang cukup luas.<br></p2>
+      <hr>
+  <h3>PENDIDIKAN</h3>
+  <p3>RA Miftahul Huda (2007 - 2009)<br> MI Miftahul Huda (2009 - 2015)<br> MTS Miftahul Huda (2015 - 2018)<br> SMKN Darut Taqwa Purwosari (2018 - 2021)<br> Universitas Yudharta Pasuruan (2021 - Sekarang)</p3>
+      <hr>
+  <h4>HOBI</h4>
+  <p4>Membaca dan Menulis.</p4>
+      <hr>
+  <h5>MOTIVASI</h5>
+  <p5>Menjadi kuat bukan berarti kamu tidak pernah lelah,<br> itu hanya berarti kamu mmiliki kekuatan untuk bangkit kembali setelah beristirahat.<br></p5>
+      <hr>
+  <h6>My Social Media</h6>
+    <a href="https://instagram.com/izzamufidah_?igshid=ZmZmhODViOGI=">Instagram</a><br><br>
+    <a href="mailto:someone@example.com">mufidahizza12@gmail.com</a>
+</center>
+</article>
+</section>
+
+<footer>
+  <p> © Copyright 2022  Mufidatul Izza.</p>
+</footer>
+
+</body>
+</html>
+
